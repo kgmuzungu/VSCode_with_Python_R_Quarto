@@ -1,4 +1,4 @@
-# VSCode with Python R_Quarto
+# VSCode with Python R Quarto
 
 This tutorial is writen in quarto and rendered to GitHub Pages. 
 
