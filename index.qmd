@@ -1,0 +1,9 @@
+---
+title: "Setting up VSCode for Python and R with Quarto"
+format: html
+toc: true
+author: Klaus Glanzer
+dater: today
+---
+
+
