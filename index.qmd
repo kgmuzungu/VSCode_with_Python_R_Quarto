@@ -74,6 +74,9 @@ Other useful things:
 * TODOTree extension
 * set VSCode to autosave
 
+## Both Python and R?
+I would say if you only need Python than dont install a mixed environment. You only need the Python part. Same for R only. 
+
 ## Resources
 Python download [https://www.python.org/downloads/](https://www.python.org/downloads/)
 VSCode download [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
