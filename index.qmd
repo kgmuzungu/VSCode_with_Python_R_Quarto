@@ -22,6 +22,7 @@ You can also contribute on Github directly! Any changes in the source .qmd file 
 This blog guides you through installing Python, R, and Quarto in VSCode on a Windows machine.
 
 Download the installers for:
+
 *  Python download [https://www.python.org/downloads/](https://www.python.org/downloads/)
 *  R download [https://cran.r-project.org/bin/windows/base/](https://cran.r-project.org/bin/windows/base/)
 *  VSCode download [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
@@ -35,6 +36,7 @@ Also install R, Quarto, Git and VSCode. The order does not matter
 The paths of the executables of all should be in the PATH environment variable of Windows. `echo %PATH%` on cmd.exe. Or/and you should now where they are on your machine.
 
 In VSCode we need some extensions to interact properly with the above installed. 
+
 * For Python:
     + Python
     + Python debugger
