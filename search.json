@@ -18,6 +18,6 @@
     "href": "index.html#resources",
     "title": "Setting up VSCode for Python and R with Quarto",
     "section": "Resources",
-    "text": "Resources\nPython download https://www.python.org/downloads/ VSCode download https://code.visualstudio.com/download Quarto download https://quarto.org/docs/download/ Git download https://git-scm.com/download/winA py Quarto HTML basics https://quarto.org/docs/output-formats/html-basics.html Quarto Markdown basics https://quarto.org/docs/authoring/markdown-basics.html Quarto GitHub Pages https://quarto.org/docs/publishing/github-pages.html renv https://rstudio.github.io/renv/articles/renv.html\n\nVideos\nGit in VSCode https://www.youtube.com/watch?v=i_23KUAEtUM\nThe panda eats, shoots and leaves.\nThe panda eats shoots and leaves."
+    "text": "Resources\nPython download https://www.python.org/downloads/\nVSCode download https://code.visualstudio.com/download\nQuarto download https://quarto.org/docs/download/\nGit download https://git-scm.com/download/win\nQuarto HTML basics https://quarto.org/docs/output-formats/html-basics.html\nQuarto Markdown basics https://quarto.org/docs/authoring/markdown-basics.html\nQuarto GitHub Pages https://quarto.org/docs/publishing/github-pages.html\nrenv https://rstudio.github.io/renv/articles/renv.html\n\nVideos\nGit in VSCode https://www.youtube.com/watch?v=i_23KUAEtUM\nThe panda eats, shoots and leaves.\nThe panda eats shoots and leaves."
   }
 ]
