@@ -62,6 +62,7 @@ At this point we have a working quarto setup with a virtual Python environment a
 
 Installing renv:
 How-to can be found here [renv](https://rstudio.github.io/renv/articles/renv.html). With `renv::init()` on the R console creates a R environment in the current project folder. To open the R console just type `radian` on a VSCode terminal command line (Terminal -> New Terminal). After restarting the R session we should also install the following packages from the R console.
+
 * `install.packages("languageserver")`
 * `install.packages("httpgd")`
 * `install.packages("reticulate")`
@@ -74,6 +75,7 @@ How-to can be found here [renv](https://rstudio.github.io/renv/articles/renv.htm
 Tip: `quarto install tinytex` from the terminal command line, installs a library that allows .pdf rendering from quarto.
 
 Other useful things:
+
 * TODOTree extension
 * set VSCode to autosave
 
@@ -83,6 +85,7 @@ I would say if you only need Python than dont install a mixed environment. You o
 :::
 
 ## Resources
+
 Python download [https://www.python.org/downloads/](https://www.python.org/downloads/)
 VSCode download [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
 Quarto download [https://quarto.org/docs/download/](https://quarto.org/docs/download/)
@@ -93,6 +96,7 @@ Quarto GitHub Pages [https://quarto.org/docs/publishing/github-pages.html](https
 renv [https://rstudio.github.io/renv/articles/renv.html](https://rstudio.github.io/renv/articles/renv.html)
 
 ### Videos
+
 Git in VSCode [https://www.youtube.com/watch?v=i_23KUAEtUM](https://www.youtube.com/watch?v=i_23KUAEtUM)
 
 *The panda eats, shoots and leaves.*
