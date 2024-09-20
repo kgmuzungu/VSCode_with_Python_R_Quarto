@@ -1,6 +1,6 @@
 ---
-title: Python Basics
-format: pdf
+title: Python and R together
+format: html
 ---
 
 ## R code

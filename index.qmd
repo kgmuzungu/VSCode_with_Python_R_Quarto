@@ -22,11 +22,11 @@ You can also contribute on Github directly! Any changes in the source .qmd file 
 This blog guides you through installing Python, R, and Quarto in VSCode on a Windows machine.
 
 Download the installers for:
-* Python download [https://www.python.org/downloads/](https://www.python.org/downloads/)
-* R download [https://cran.r-project.org/bin/windows/base/](https://cran.r-project.org/bin/windows/base/)
-* VSCode download [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
-* Quarto download [https://quarto.org/docs/download/](https://quarto.org/docs/download/)
-* Git download [https://git-scm.com/download/win](https://git-scm.com/download/win)
+*  Python download [https://www.python.org/downloads/](https://www.python.org/downloads/)
+*  R download [https://cran.r-project.org/bin/windows/base/](https://cran.r-project.org/bin/windows/base/)
+*  VSCode download [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
+*  Quarto download [https://quarto.org/docs/download/](https://quarto.org/docs/download/)
+*  Git download [https://git-scm.com/download/win](https://git-scm.com/download/win)
 
 Install Python. A python.exe will be copied to a folder ... and much more. You can have multiple Python versions installed in parallel. Open e cmd.exe or powershell.exe and type `python --version`. You will get the Python interpreter version of the python.exe that is in the `%PATH%` variable. It can be handy to have the folders with python.exe in the PATH variable. Normally `pip` is installed with Python. pip is the [python package installer](https://pip.pypa.io/en/stable/). You can type `pip --version` on the command line. 
 
@@ -74,8 +74,10 @@ Other useful things:
 * TODOTree extension
 * set VSCode to autosave
 
+::: {.callout-important}
 ## Both Python and R?
 I would say if you only need Python than dont install a mixed environment. You only need the Python part. Same for R only. 
+:::
 
 ## Resources
 Python download [https://www.python.org/downloads/](https://www.python.org/downloads/)
