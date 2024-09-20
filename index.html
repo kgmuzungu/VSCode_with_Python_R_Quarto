@@ -117,7 +117,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#resources" id="toc-resources" class="nav-link active" data-scroll-target="#resources">Resources</a>
+  <li><a href="#blabla-bla" id="toc-blabla-bla" class="nav-link active" data-scroll-target="#blabla-bla">BLABLA BLA</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a>
   <ul class="collapse">
   <li><a href="#videos" id="toc-videos" class="nav-link" data-scroll-target="#videos">Videos</a></li>
   </ul></li>
@@ -158,6 +159,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<section id="blabla-bla" class="level2">
+<h2 class="anchored" data-anchor-id="blabla-bla">BLABLA BLA</h2>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -185,11 +188,32 @@ Caution
 </div>
 </div>
 <p>This blog guides you through installing Python, R, and Quarto in VSCode on a Windows machine.</p>
-<p>Download the installers for: * Python download <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a> * R download <a href="https://cran.r-project.org/bin/windows/base/">https://cran.r-project.org/bin/windows/base/</a> * VSCode download <a href="https://code.visualstudio.com/download">https://code.visualstudio.com/download</a> * Quarto download <a href="https://quarto.org/docs/download/">https://quarto.org/docs/download/</a> * Git download <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></p>
+<p>Download the installers for:</p>
+<ul>
+<li>Python download <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></li>
+<li>R download <a href="https://cran.r-project.org/bin/windows/base/">https://cran.r-project.org/bin/windows/base/</a></li>
+<li>VSCode download <a href="https://code.visualstudio.com/download">https://code.visualstudio.com/download</a></li>
+<li>Quarto download <a href="https://quarto.org/docs/download/">https://quarto.org/docs/download/</a></li>
+<li>Git download <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></li>
+</ul>
 <p>Install Python. A python.exe will be copied to a folder … and much more. You can have multiple Python versions installed in parallel. Open e cmd.exe or powershell.exe and type <code>python --version</code>. You will get the Python interpreter version of the python.exe that is in the <code>%PATH%</code> variable. It can be handy to have the folders with python.exe in the PATH variable. Normally <code>pip</code> is installed with Python. pip is the <a href="https://pip.pypa.io/en/stable/">python package installer</a>. You can type <code>pip --version</code> on the command line.</p>
 <p>Also install R, Quarto, Git and VSCode. The order does not matter</p>
 <p>The paths of the executables of all should be in the PATH environment variable of Windows. <code>echo %PATH%</code> on cmd.exe. Or/and you should now where they are on your machine.</p>
-<p>In VSCode we need some extensions to interact properly with the above installed. * For Python: + Python + Python debugger + Pylance * For R: + R extension + R debugger * Quarto extension</p>
+<p>In VSCode we need some extensions to interact properly with the above installed.</p>
+<ul>
+<li>For Python:
+<ul>
+<li>Python</li>
+<li>Python debugger</li>
+<li>Pylance</li>
+</ul></li>
+<li>For R:
+<ul>
+<li>R extension</li>
+<li>R debugger</li>
+</ul></li>
+<li>Quarto extension</li>
+</ul>
 <p>Now lets create a folder for a Python/R project and open it with File –&gt; Open Folder. Let’s create a virtual Python environment in this folder. Ctrl + shift + p opens the VSCode command palette. Type “create” and you should see <code>Python: Create Environment</code>. VSCode will find a the python interpreter that is in %PATH% or you can enter a path to a different python.exe (different version). From now onward, if you use <code>pip</code> to install a python library, it will be installed locally in the ./.venv folder of your project.</p>
 <p>With Terminal –&gt; New Terminal open a new terminal window (basically a OS command line). Lets install the python library <code>radian</code>. <a href="https://github.com/randy3k/radian">radian</a> makes the R console colorful and better readable. Open a terminal and <code>pip install -U radian</code> installs the required files. Let’s get some more Python libraries. <code>pip install pandas</code> installs the pandas library. <code>pip list</code> lists all locally installed libraries and <code>pip freeze &gt; requirements.txt</code> creates a list with all installed libraries plus version numbers. A great interactive python console is ipython, <code>pip install ipython</code>. Other useful packages are <em>plotnine</em>, <em>statsmodels</em>, <em>scipy</em>.</p>
 <p>We still have to adapt a few settings in the VSCode extensions. Click on the Extensions symbol on the very left side, then on the sproket, select <em>Extension settings</em>. Look for <em>R &gt; Rterm: Windows</em> and enter the path for radian (<code>{workspaceFolder}\.venv\Scripts\radian.exe</code> … copy it. You dont have to replace {workspaceFolder} with a explicit path). And we have to set <em>R: Bracketed Paste</em>. The extension settings are global to all VSCode projects. And in the R debugger extension we need to set the the R interpreter path, <em>R &gt; Rpath Windows</em> to, e.g.&nbsp;<code>C:\Program Files\R\R-4.4.1\bin\x64\R.exe</code>.</p>
@@ -212,13 +236,15 @@ Both Python and R?
 <p>I would say if you only need Python than dont install a mixed environment. You only need the Python part. Same for R only.</p>
 </div>
 </div>
+</section>
 <section id="resources" class="level2">
 <h2 class="anchored" data-anchor-id="resources">Resources</h2>
 <p>Python download <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a> VSCode download <a href="https://code.visualstudio.com/download">https://code.visualstudio.com/download</a> Quarto download <a href="https://quarto.org/docs/download/">https://quarto.org/docs/download/</a> Git download <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a>A py Quarto HTML basics <a href="https://quarto.org/docs/output-formats/html-basics.html">https://quarto.org/docs/output-formats/html-basics.html</a> Quarto Markdown basics <a href="https://quarto.org/docs/authoring/markdown-basics.html">https://quarto.org/docs/authoring/markdown-basics.html</a> Quarto GitHub Pages <a href="https://quarto.org/docs/publishing/github-pages.html">https://quarto.org/docs/publishing/github-pages.html</a> renv <a href="https://rstudio.github.io/renv/articles/renv.html">https://rstudio.github.io/renv/articles/renv.html</a></p>
 <section id="videos" class="level3">
 <h3 class="anchored" data-anchor-id="videos">Videos</h3>
 <p>Git in VSCode <a href="https://www.youtube.com/watch?v=i_23KUAEtUM">https://www.youtube.com/watch?v=i_23KUAEtUM</a></p>
-<p><em>The panda eats, shoots and leaves.</em> <em>The panda eats shoots and leaves.</em></p>
+<p><em>The panda eats, shoots and leaves.</em></p>
+<p><em>The panda eats shoots and leaves.</em></p>
 
 
 <!-- -->
@@ -710,90 +736,94 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="an">from:</span><span class="co"> markdown+emoji</span></span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>This is still a work in progress! Images will be included. Any feedback highly welcome! </span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>::: {.callout-caution}</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>You can also contribute on Github directly! Any changes in the source .qmd file will be automatically rendered into the .html</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>This blog guides you through installing Python, R, and Quarto in VSCode on a Windows machine.</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>Download the installers for:</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="ss">*  </span>Python download <span class="co">[</span><span class="ot">https://www.python.org/downloads/</span><span class="co">](https://www.python.org/downloads/)</span></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ss">*  </span>R download <span class="co">[</span><span class="ot">https://cran.r-project.org/bin/windows/base/</span><span class="co">](https://cran.r-project.org/bin/windows/base/)</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="ss">*  </span>VSCode download <span class="co">[</span><span class="ot">https://code.visualstudio.com/download</span><span class="co">](https://code.visualstudio.com/download)</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="ss">*  </span>Quarto download <span class="co">[</span><span class="ot">https://quarto.org/docs/download/</span><span class="co">](https://quarto.org/docs/download/)</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="ss">*  </span>Git download <span class="co">[</span><span class="ot">https://git-scm.com/download/win</span><span class="co">](https://git-scm.com/download/win)</span></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>Install Python. A python.exe will be copied to a folder ... and much more. You can have multiple Python versions installed in parallel. Open e cmd.exe or powershell.exe and type <span class="in">`python --version`</span>. You will get the Python interpreter version of the python.exe that is in the <span class="in">`%PATH%`</span> variable. It can be handy to have the folders with python.exe in the PATH variable. Normally <span class="in">`pip`</span> is installed with Python. pip is the <span class="co">[</span><span class="ot">python package installer</span><span class="co">](https://pip.pypa.io/en/stable/)</span>. You can type <span class="in">`pip --version`</span> on the command line. </span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">## BLABLA BLA</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>This is still a work in progress! Images will be included. Any feedback highly welcome! </span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>::: {.callout-caution}</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>You can also contribute on Github directly! Any changes in the source .qmd file will be automatically rendered into the .html</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>This blog guides you through installing Python, R, and Quarto in VSCode on a Windows machine.</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>Download the installers for:</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="ss">*  </span>Python download <span class="co">[</span><span class="ot">https://www.python.org/downloads/</span><span class="co">](https://www.python.org/downloads/)</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="ss">*  </span>R download <span class="co">[</span><span class="ot">https://cran.r-project.org/bin/windows/base/</span><span class="co">](https://cran.r-project.org/bin/windows/base/)</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="ss">*  </span>VSCode download <span class="co">[</span><span class="ot">https://code.visualstudio.com/download</span><span class="co">](https://code.visualstudio.com/download)</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="ss">*  </span>Quarto download <span class="co">[</span><span class="ot">https://quarto.org/docs/download/</span><span class="co">](https://quarto.org/docs/download/)</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="ss">*  </span>Git download <span class="co">[</span><span class="ot">https://git-scm.com/download/win</span><span class="co">](https://git-scm.com/download/win)</span></span>
 <span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>Also install R, Quarto, Git and VSCode. The order does not matter</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>Install Python. A python.exe will be copied to a folder ... and much more. You can have multiple Python versions installed in parallel. Open e cmd.exe or powershell.exe and type <span class="in">`python --version`</span>. You will get the Python interpreter version of the python.exe that is in the <span class="in">`%PATH%`</span> variable. It can be handy to have the folders with python.exe in the PATH variable. Normally <span class="in">`pip`</span> is installed with Python. pip is the <span class="co">[</span><span class="ot">python package installer</span><span class="co">](https://pip.pypa.io/en/stable/)</span>. You can type <span class="in">`pip --version`</span> on the command line. </span>
 <span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>The paths of the executables of all should be in the PATH environment variable of Windows. <span class="in">`echo %PATH%`</span> on cmd.exe. Or/and you should now where they are on your machine.</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>Also install R, Quarto, Git and VSCode. The order does not matter</span>
 <span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>In VSCode we need some extensions to interact properly with the above installed. </span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>For Python:</span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="ss">    + </span>Python</span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="ss">    + </span>Python debugger</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="ss">    + </span>Pylance</span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>For R:</span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="ss">    + </span>R extension</span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="ss">    + </span>R debugger</span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Quarto extension</span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>Now lets create a folder for a Python/R project and open it with File --&gt; Open Folder. Let's create a virtual Python environment in this folder. Ctrl + shift + p opens the VSCode command palette. Type "create" and you should see <span class="in">`Python: Create Environment`</span>. VSCode will find a the python interpreter that is in %PATH% or you can enter a path to a different python.exe (different version). From now onward, if you use <span class="in">`pip`</span> to install a python library, it will be installed locally in the ./.venv folder of your project. </span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>With Terminal --&gt; New Terminal open a new terminal window (basically a OS command line). Lets install the python library <span class="in">`radian`</span>. <span class="co">[</span><span class="ot">radian</span><span class="co">](https://github.com/randy3k/radian)</span> makes the R console colorful and better readable. Open a terminal and <span class="in">`pip install -U radian`</span> installs the required files. Let's get some more Python libraries. <span class="in">`pip install pandas`</span> installs the pandas library. <span class="in">`pip list`</span> lists all locally installed libraries and <span class="in">`pip freeze &gt; requirements.txt`</span> creates a list with all installed libraries plus version numbers. A great interactive python console is ipython, <span class="in">`pip install ipython`</span>. Other useful packages are *plotnine*, *statsmodels*, *scipy*.</span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>We still have to adapt a few settings in the VSCode extensions. Click on the Extensions symbol on the very left side, then on the sproket, select *Extension settings*. Look for *R &gt; Rterm: Windows* and enter the path for radian (`{workspaceFolder}\.venv\Scripts\radian.exe` ... copy it. You dont have to replace {workspaceFolder} with a explicit path). And we have to set *R: Bracketed Paste*. The extension settings are global to all VSCode projects. And in the R debugger extension we need to set the the R interpreter path, *R &gt; Rpath Windows* to, e.g. <span class="in">`C:\Program Files\R\R-4.4.1\bin\x64\R.exe`</span>.</span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>For R to work properly we need two R packages: languageserver and httpg. Simplest way is to click on the R symbol on the very left (somewhere below the extensions symbol). Under 'help pages' click on 'Install CRAN Package' or on the plus sign next to it and install </span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>httpg and </span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>languageserver</span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>renv</span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>At this point we have a working quarto setup with a virtual Python environment and globally installed R packages. We can also setup a virtual R environment, (renv)<span class="co">[</span><span class="ot">https://rstudio.github.io/renv/articles/renv.html</span><span class="co">]</span>, to keep R packages local in the project folder. Virtual environments allow different projects using different interpreter and package versions.</span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>Installing renv:</span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>How-to can be found here <span class="co">[</span><span class="ot">renv</span><span class="co">](https://rstudio.github.io/renv/articles/renv.html)</span>. With <span class="in">`renv::init()`</span> on the R console creates a R environment in the current project folder. To open the R console just type <span class="in">`radian`</span> on a VSCode terminal command line (Terminal -&gt; New Terminal). After restarting the R session we should also install the following packages from the R console.</span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="in">`install.packages("languageserver")`</span></span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="in">`install.packages("httpgd")`</span></span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="in">`install.packages("reticulate")`</span></span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="in">`install.packages("tidyverse")`</span></span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="in">`install.packages("ggplot2")`</span></span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a> Hint: renv.lock only reflects packages used in the project, (see)<span class="co">[</span><span class="ot">https://rstudio.github.io/renv/articles/faq.html#why-isnt-my-package-being-snapshotted-into-the-lockfile</span><span class="co">]</span>. To be sure that renv.lock is up to date, type <span class="in">`renv::snapshot()`</span>.</span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>The paths of the executables of all should be in the PATH environment variable of Windows. <span class="in">`echo %PATH%`</span> on cmd.exe. Or/and you should now where they are on your machine.</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>In VSCode we need some extensions to interact properly with the above installed. </span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>For Python:</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="ss">    + </span>Python</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="ss">    + </span>Python debugger</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="ss">    + </span>Pylance</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>For R:</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="ss">    + </span>R extension</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="ss">    + </span>R debugger</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Quarto extension</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>Now lets create a folder for a Python/R project and open it with File --&gt; Open Folder. Let's create a virtual Python environment in this folder. Ctrl + shift + p opens the VSCode command palette. Type "create" and you should see <span class="in">`Python: Create Environment`</span>. VSCode will find a the python interpreter that is in %PATH% or you can enter a path to a different python.exe (different version). From now onward, if you use <span class="in">`pip`</span> to install a python library, it will be installed locally in the ./.venv folder of your project. </span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>With Terminal --&gt; New Terminal open a new terminal window (basically a OS command line). Lets install the python library <span class="in">`radian`</span>. <span class="co">[</span><span class="ot">radian</span><span class="co">](https://github.com/randy3k/radian)</span> makes the R console colorful and better readable. Open a terminal and <span class="in">`pip install -U radian`</span> installs the required files. Let's get some more Python libraries. <span class="in">`pip install pandas`</span> installs the pandas library. <span class="in">`pip list`</span> lists all locally installed libraries and <span class="in">`pip freeze &gt; requirements.txt`</span> creates a list with all installed libraries plus version numbers. A great interactive python console is ipython, <span class="in">`pip install ipython`</span>. Other useful packages are *plotnine*, *statsmodels*, *scipy*.</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>We still have to adapt a few settings in the VSCode extensions. Click on the Extensions symbol on the very left side, then on the sproket, select *Extension settings*. Look for *R &gt; Rterm: Windows* and enter the path for radian (`{workspaceFolder}\.venv\Scripts\radian.exe` ... copy it. You dont have to replace {workspaceFolder} with a explicit path). And we have to set *R: Bracketed Paste*. The extension settings are global to all VSCode projects. And in the R debugger extension we need to set the the R interpreter path, *R &gt; Rpath Windows* to, e.g. <span class="in">`C:\Program Files\R\R-4.4.1\bin\x64\R.exe`</span>.</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>For R to work properly we need two R packages: languageserver and httpg. Simplest way is to click on the R symbol on the very left (somewhere below the extensions symbol). Under 'help pages' click on 'Install CRAN Package' or on the plus sign next to it and install </span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>httpg and </span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>languageserver</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>renv</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>At this point we have a working quarto setup with a virtual Python environment and globally installed R packages. We can also setup a virtual R environment, (renv)<span class="co">[</span><span class="ot">https://rstudio.github.io/renv/articles/renv.html</span><span class="co">]</span>, to keep R packages local in the project folder. Virtual environments allow different projects using different interpreter and package versions.</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>Installing renv:</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>How-to can be found here <span class="co">[</span><span class="ot">renv</span><span class="co">](https://rstudio.github.io/renv/articles/renv.html)</span>. With <span class="in">`renv::init()`</span> on the R console creates a R environment in the current project folder. To open the R console just type <span class="in">`radian`</span> on a VSCode terminal command line (Terminal -&gt; New Terminal). After restarting the R session we should also install the following packages from the R console.</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="in">`install.packages("languageserver")`</span></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="in">`install.packages("httpgd")`</span></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="in">`install.packages("reticulate")`</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="in">`install.packages("tidyverse")`</span></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="in">`install.packages("ggplot2")`</span></span>
 <span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>Tip: <span class="in">`quarto install tinytex`</span> from the terminal command line, installs a library that allows .pdf rendering from quarto.</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a> Hint: renv.lock only reflects packages used in the project, (see)<span class="co">[</span><span class="ot">https://rstudio.github.io/renv/articles/faq.html#why-isnt-my-package-being-snapshotted-into-the-lockfile</span><span class="co">]</span>. To be sure that renv.lock is up to date, type <span class="in">`renv::snapshot()`</span>.</span>
 <span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>Other useful things:</span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>TODOTree extension</span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>set VSCode to autosave</span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="fu">## Both Python and R?</span></span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>I would say if you only need Python than dont install a mixed environment. You only need the Python part. Same for R only. </span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="fu">## Resources</span></span>
-<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>Python download <span class="co">[</span><span class="ot">https://www.python.org/downloads/</span><span class="co">](https://www.python.org/downloads/)</span></span>
-<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>VSCode download <span class="co">[</span><span class="ot">https://code.visualstudio.com/download</span><span class="co">](https://code.visualstudio.com/download)</span></span>
-<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>Quarto download <span class="co">[</span><span class="ot">https://quarto.org/docs/download/</span><span class="co">](https://quarto.org/docs/download/)</span></span>
-<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>Git download <span class="co">[</span><span class="ot">https://git-scm.com/download/win</span><span class="co">](https://git-scm.com/download/win)</span>A py</span>
-<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>Quarto HTML basics <span class="co">[</span><span class="ot">https://quarto.org/docs/output-formats/html-basics.html</span><span class="co">](https://quarto.org/docs/output-formats/html-basics.html)</span></span>
-<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>Quarto Markdown basics <span class="co">[</span><span class="ot">https://quarto.org/docs/authoring/markdown-basics.html</span><span class="co">](https://quarto.org/docs/authoring/markdown-basics.html)</span></span>
-<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>Quarto GitHub Pages <span class="co">[</span><span class="ot">https://quarto.org/docs/publishing/github-pages.html</span><span class="co">](https://quarto.org/docs/publishing/github-pages.html)</span></span>
-<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>renv <span class="co">[</span><span class="ot">https://rstudio.github.io/renv/articles/renv.html</span><span class="co">](https://rstudio.github.io/renv/articles/renv.html)</span></span>
-<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a><span class="fu">### Videos</span></span>
-<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>Git in VSCode <span class="co">[</span><span class="ot">https://www.youtube.com/watch?v=i_23KUAEtUM</span><span class="co">](https://www.youtube.com/watch?v=i_23KUAEtUM)</span></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>Tip: <span class="in">`quarto install tinytex`</span> from the terminal command line, installs a library that allows .pdf rendering from quarto.</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>Other useful things:</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>TODOTree extension</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>set VSCode to autosave</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a><span class="fu">## Both Python and R?</span></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>I would say if you only need Python than dont install a mixed environment. You only need the Python part. Same for R only. </span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="fu">## Resources</span></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>Python download <span class="co">[</span><span class="ot">https://www.python.org/downloads/</span><span class="co">](https://www.python.org/downloads/)</span></span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>VSCode download <span class="co">[</span><span class="ot">https://code.visualstudio.com/download</span><span class="co">](https://code.visualstudio.com/download)</span></span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>Quarto download <span class="co">[</span><span class="ot">https://quarto.org/docs/download/</span><span class="co">](https://quarto.org/docs/download/)</span></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>Git download <span class="co">[</span><span class="ot">https://git-scm.com/download/win</span><span class="co">](https://git-scm.com/download/win)</span>A py</span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>Quarto HTML basics <span class="co">[</span><span class="ot">https://quarto.org/docs/output-formats/html-basics.html</span><span class="co">](https://quarto.org/docs/output-formats/html-basics.html)</span></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>Quarto Markdown basics <span class="co">[</span><span class="ot">https://quarto.org/docs/authoring/markdown-basics.html</span><span class="co">](https://quarto.org/docs/authoring/markdown-basics.html)</span></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>Quarto GitHub Pages <span class="co">[</span><span class="ot">https://quarto.org/docs/publishing/github-pages.html</span><span class="co">](https://quarto.org/docs/publishing/github-pages.html)</span></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>renv <span class="co">[</span><span class="ot">https://rstudio.github.io/renv/articles/renv.html</span><span class="co">](https://rstudio.github.io/renv/articles/renv.html)</span></span>
 <span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>*The panda eats, shoots and leaves.*</span>
-<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>*The panda eats shoots and leaves.*</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a><span class="fu">### Videos</span></span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>Git in VSCode <span class="co">[</span><span class="ot">https://www.youtube.com/watch?v=i_23KUAEtUM</span><span class="co">](https://www.youtube.com/watch?v=i_23KUAEtUM)</span></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>*The panda eats, shoots and leaves.*</span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>*The panda eats shoots and leaves.*</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
