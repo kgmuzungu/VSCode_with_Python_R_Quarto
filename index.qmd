@@ -87,13 +87,21 @@ I would say if you only need Python than dont install a mixed environment. You o
 ## Resources
 
 Python download [https://www.python.org/downloads/](https://www.python.org/downloads/)
+
 VSCode download [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
+
 Quarto download [https://quarto.org/docs/download/](https://quarto.org/docs/download/)
-Git download [https://git-scm.com/download/win](https://git-scm.com/download/win)A py
+
+Git download [https://git-scm.com/download/win](https://git-scm.com/download/win)
+
 Quarto HTML basics [https://quarto.org/docs/output-formats/html-basics.html](https://quarto.org/docs/output-formats/html-basics.html)
+
 Quarto Markdown basics [https://quarto.org/docs/authoring/markdown-basics.html](https://quarto.org/docs/authoring/markdown-basics.html)
+
 Quarto GitHub Pages [https://quarto.org/docs/publishing/github-pages.html](https://quarto.org/docs/publishing/github-pages.html)
+
 renv [https://rstudio.github.io/renv/articles/renv.html](https://rstudio.github.io/renv/articles/renv.html)
+
 
 ### Videos
 
