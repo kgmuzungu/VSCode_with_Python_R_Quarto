@@ -95,4 +95,5 @@ renv [https://rstudio.github.io/renv/articles/renv.html](https://rstudio.github.
 Git in VSCode [https://www.youtube.com/watch?v=i_23KUAEtUM](https://www.youtube.com/watch?v=i_23KUAEtUM)
 
 *The panda eats, shoots and leaves.*
+
 *The panda eats shoots and leaves.*
