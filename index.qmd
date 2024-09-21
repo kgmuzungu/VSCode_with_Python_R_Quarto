@@ -23,7 +23,7 @@ Download the installers for:
 *  Quarto download [https://quarto.org/docs/download/](https://quarto.org/docs/download/)
 *  Git download [https://git-scm.com/download/win](https://git-scm.com/download/win)
 
-First we install Python. You can have multiple Python versions installed in parallel. On Windows machines Python can be installed in different locations, depending if it was installed via the app store or as an installable. Open e cmd.exe or powershell.exe and type `python --version`. You will get the Python interpreter version of the python.exe that is in the `%PATH%` variable. It can be handy to have the folders with python.exe in the PATH variable. Normally `pip` is installed with Python. pip is the [python package installer](https://pip.pypa.io/en/stable/). You can type `pip --version` on the command line. If you dont get a response than you might have to install pip separately.  
+First we install Python. You can have multiple Python versions installed in parallel. On Windows machines Python can be installed in different locations, depending if it was installed via the app store or as an installable. Open e cmd.exe or powershell.exe and type `python --version`. You will get the Python interpreter version of the python.exe that is in the `%PATH%` variable. It can be handy to have the folders with python.exe in the PATH variable. Normally `pip` is installed with Python. pip is the [python package installer](https://pip.pypa.io/en/stable/). You can type `pip --version` on the command line. If you dont get a response then you might have to install pip separately.  
 
 Also install R, Quarto, Git and VSCode. The order does not matter
 
