@@ -9,7 +9,7 @@
 <meta name="author" content="Klaus G.">
 <meta name="dcterms.date" content="2024-09-21">
 
-<title>Setting up VSCode for Python and R with Quarto</title>
+<title>Setting up VSCode for Python, R and Quarto</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -136,7 +136,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Setting up VSCode for Python and R with Quarto</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">Setting up VSCode for Python, R and Quarto</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 </div>
 
 
@@ -165,9 +165,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<p>This article guides you through installing Python, R, and Quarto in VSCode on a Windows machine.</p>
 <section id="downloads" class="level2">
 <h2 class="anchored" data-anchor-id="downloads">Downloads</h2>
-<p>This blog guides you through installing Python, R, and Quarto in VSCode on a Windows machine.</p>
 <p>Download the installers for:</p>
 <ul>
 <li>Python download <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></li>
@@ -256,7 +256,7 @@ Important
 </section>
 <section id="lets-try-it-out" class="level2">
 <h2 class="anchored" data-anchor-id="lets-try-it-out">Let’s try it out!</h2>
-<p><a href="https://github.com/kgmuzungu/VSCode_with_Python_R_Quarto/blob/main/my_R_and_python_example.qmd">my_R_and_python_example.qmd</a> shows how to use R and Python in the same Quarto document, how to exchange dataframes and how multi-indexing is translated. …. we could also execute and render this .qmd file with a workflow on GitHub …</p>
+<p><a href="https://github.com/kgmuzungu/VSCode_with_Python_R_Quarto/blob/main/my_R_and_python_example.qmd">my_R_and_python_example.qmd</a> shows how to use R and Python in the same Quarto document, how to exchange dataframes and how multi-indexing is translated. …. we could also execute and render this .qmd file with a Action workflow on GitHub …</p>
 </section>
 <section id="resources" class="level2">
 <h2 class="anchored" data-anchor-id="resources">Resources</h2>
@@ -276,7 +276,12 @@ Important
 </section>
 <section id="how-this-page-was-published-on-github-pages" class="level2">
 <h2 class="anchored" data-anchor-id="how-this-page-was-published-on-github-pages">How this page was published on GitHub Pages?</h2>
-<p>In .github.yml a GitHub Actions workflow was defined. A how-to can be found <a href="https://quarto.org/docs/publishing/github-pages.html#publish-action">here</a>. If you use Actions then you dont need to render to a ./doc directory. In the GitHub Pages settings you do NOT set pages from Actions but keep from gh-pages branch. Also there is a misleading mistake in the how-to: &gt; Before configuring the publishing action, it’s important that you run quarto publish gh-pages locally, once. This will create the _publish.yml configuration required by the subsequent invocations of the GitHub Action. To do this, run the following from within your project: No <code>_publish.yml</code> will ever be created. And have a look at the <a href="https://github.com/kgmuzungu/VSCode_with_Python_R_Quarto">source files</a>!</p>
+<p>In .github.yml a GitHub Actions workflow was defined. A how-to can be found <a href="https://quarto.org/docs/publishing/github-pages.html#publish-action">here</a>. If you use Actions then you dont need to render to a ./doc directory. In the GitHub Pages settings you do NOT set pages from Actions but keep from gh-pages branch. Also there is a misleading mistake in the how-to:</p>
+<blockquote class="blockquote">
+<p>Before configuring the publishing action, it’s important that you run quarto publish gh-pages locally, once. This will create the _publish.yml configuration required by the subsequent invocations of the GitHub Action. To do this, run the following from within your project:</p>
+</blockquote>
+<p>… No <code>_publish.yml</code> will ever be created.</p>
+<p>And have a look at the <a href="https://github.com/kgmuzungu/VSCode_with_Python_R_Quarto">source files</a> for this page!</p>
 <hr>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -786,7 +791,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Setting up VSCode for Python and R with Quarto"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Setting up VSCode for Python, R and Quarto"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> </span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">    html:</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">        toc: true</span></span>
@@ -798,9 +803,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="an">from:</span><span class="co"> markdown+emoji</span></span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fu">## Downloads</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>This article guides you through installing Python, R, and Quarto in VSCode on a Windows machine.</span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>This blog guides you through installing Python, R, and Quarto in VSCode on a Windows machine.</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">## Downloads</span></span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>Download the installers for:</span>
 <span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
@@ -877,7 +882,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a><span class="fu">## Let's try it out!</span></span>
-<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">my_R_and_python_example.qmd</span><span class="co">](https://github.com/kgmuzungu/VSCode_with_Python_R_Quarto/blob/main/my_R_and_python_example.qmd)</span> shows how to use R and Python in the same Quarto document, how to exchange dataframes and how multi-indexing is translated. .... we could also execute and render this .qmd file with a workflow on GitHub ...</span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">my_R_and_python_example.qmd</span><span class="co">](https://github.com/kgmuzungu/VSCode_with_Python_R_Quarto/blob/main/my_R_and_python_example.qmd)</span> shows how to use R and Python in the same Quarto document, how to exchange dataframes and how multi-indexing is translated. .... we could also execute and render this .qmd file with a Action workflow on GitHub ...</span>
 <span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a><span class="fu">## Resources</span></span>
 <span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a></span>
@@ -907,25 +912,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a><span class="fu">## How this page was published on GitHub Pages?</span></span>
 <span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a>In .github\workflows\publish.yml a GitHub Actions workflow was defined. A how-to can be found <span class="co">[</span><span class="ot">here</span><span class="co">](https://quarto.org/docs/publishing/github-pages.html#publish-action)</span>. If you use Actions then you dont need to render to a ./doc directory. In the GitHub Pages settings you do NOT set pages from Actions but keep from gh-pages branch. Also there is a misleading mistake in the how-to:</span>
-<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Before configuring the publishing action, it’s important that you run quarto publish gh-pages locally, once. This will create the _publish.yml configuration required by the subsequent invocations of the GitHub Action. To do this, run the following from within your project: </span></span>
-<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a><span class="at">No </span><span class="in">`_publish.yml`</span><span class="at"> will ever be created.</span></span>
-<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a><span class="at">And have a look at the </span><span class="co">[</span><span class="ot">source files</span><span class="co">](https://github.com/kgmuzungu/VSCode_with_Python_R_Quarto)</span><span class="at">!</span></span>
-<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
-<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a>This is still a work in progress! Any feedback highly welcome! </span>
-<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>::: {.callout-caution}</span>
-<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a>You can also contribute on Github directly! Become a contributor, make changes and create a pull request.</span>
-<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a>*The panda eats, shoots and leaves.*</span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Before configuring the publishing action, it’s important that you run quarto publish gh-pages locally, once. This will create the _publish.yml configuration required by the subsequent invocations of the GitHub Action. To do this, run the following from within your project: </span></span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a>... No <span class="in">`_publish.yml`</span> will ever be created.</span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a>And have a look at the <span class="co">[</span><span class="ot">source files</span><span class="co">](https://github.com/kgmuzungu/VSCode_with_Python_R_Quarto)</span> for this page!</span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>This is still a work in progress! Any feedback highly welcome! </span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>::: {.callout-caution}</span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>You can also contribute on Github directly! Become a contributor, make changes and create a pull request.</span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>*The panda eats shoots and leaves.*</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>*The panda eats, shoots and leaves.*</span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>*The panda eats shoots and leaves.*</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
