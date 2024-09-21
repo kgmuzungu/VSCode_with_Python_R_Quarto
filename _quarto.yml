@@ -2,3 +2,5 @@ project:
   type: website
 execute: 
   freeze: auto
+render: 
+  - "website/index.qmd"
