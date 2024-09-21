@@ -11,7 +11,7 @@ date: today
 from: markdown+emoji
 ---
 
-## Starting wiht R code
+## Starting with R code
 ```{r}
 #| label: load_R_libraries
 #| echo: true
