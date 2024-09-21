@@ -4,14 +4,14 @@
     "href": "my_R_and_python_example.html",
     "title": "Python and R together",
     "section": "",
-    "text": "library(tidyverse)\nlibrary(reticulate)\n# github Actions workflow is with the current publish.yml no setting up a venv\n# uncomment it if you run this file in VSCode\n#use_virtualenv(\"./.venv\", required=TRUE)  # tells R reticulate to use this Python virtual envivonment\n\n\ndf_r &lt;- read.csv(\"./data/covid.csv\")\nnrow(df_r)\n\n[1] 20780"
+    "text": "library(reticulate)\nlibrary(ggplot2)\n# github Actions workflow is with the current publish.yml no setting up a venv\n# uncomment it if you run this file in VSCode\n#use_virtualenv(\"./.venv\", required=TRUE)  # tells R reticulate to use this Python virtual envivonment\n\n\ndf_r &lt;- read.csv(\"./data/covid.csv\")\nnrow(df_r)\n\n[1] 20780"
   },
   {
     "objectID": "my_R_and_python_example.html#starting-wiht-r-code",
     "href": "my_R_and_python_example.html#starting-wiht-r-code",
     "title": "Python and R together",
     "section": "",
-    "text": "library(tidyverse)\nlibrary(reticulate)\n# github Actions workflow is with the current publish.yml no setting up a venv\n# uncomment it if you run this file in VSCode\n#use_virtualenv(\"./.venv\", required=TRUE)  # tells R reticulate to use this Python virtual envivonment\n\n\ndf_r &lt;- read.csv(\"./data/covid.csv\")\nnrow(df_r)\n\n[1] 20780"
+    "text": "library(reticulate)\nlibrary(ggplot2)\n# github Actions workflow is with the current publish.yml no setting up a venv\n# uncomment it if you run this file in VSCode\n#use_virtualenv(\"./.venv\", required=TRUE)  # tells R reticulate to use this Python virtual envivonment\n\n\ndf_r &lt;- read.csv(\"./data/covid.csv\")\nnrow(df_r)\n\n[1] 20780"
   },
   {
     "objectID": "my_R_and_python_example.html#some-python-code",
@@ -95,7 +95,7 @@
     "href": "index.html#lets-try-it-out",
     "title": "Setting up VSCode for Python, R and Quarto",
     "section": "Let’s try it out!",
-    "text": "Let’s try it out!\nmy_R_and_python_example.qmd shows how to use R and Python in the same Quarto document, how to exchange dataframes and how multi-indexing is translated. …. we could also execute and render this .qmd file with a Action workflow on GitHub … like here"
+    "text": "Let’s try it out!\nmy_R_and_python_example.qmd shows how to use R and Python in the same Quarto document, how to exchange dataframes and how multi-indexing is translated. Try it with your VSCode setup. You have to uncomment the use_virtualenv() at the beginning … or we execute and render this .qmd file also with a a GitHub Action workflow … the result is like here"
   },
   {
     "objectID": "index.html#resources",
