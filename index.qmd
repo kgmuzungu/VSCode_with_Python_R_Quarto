@@ -42,6 +42,10 @@ In VSCode we need some extensions to interact properly with the above installed.
     + `R debugger`
 * `Quarto`
 
+::: {.callout-tip}
+You can set VSCode to autosave.
+:::
+
 ## Python virtual environment
 
 Create a folder for a Python/R project with a Windows explorer and open it with File --> Open Folder. Now we create a virtual Python environment in this folder. With Ctrl + shift + p open the VSCode command palette. Type "create" and you should see `Python: Create Environment`. VSCode will find a the python interpreter that is in %PATH% or you can enter a path to a different python.exe (different version). From now onward, if you use `pip` to install a python library, it will be installed locally in the ./.venv folder of your project. You should have a .venv folder in your project folder.
@@ -79,9 +83,6 @@ More information can be found here [renv](https://rstudio.github.io/renv/article
 Quarto commands are available from the terminal command line. To render a .qmd you would type `quarto render myScrip.qmd` for example.
 Tip: `quarto install tinytex` from the terminal command line, installs a library that allows .pdf rendering from quarto.
 
-::: {.callout-tip}
-You can set VSCode to autosave.
-:::
 
 ::: {.callout-important}
 **Both Python and R?**
