@@ -2,5 +2,7 @@ project:
   type: website
   render: 
     - "index.qmd"
+    - "my_R_and_python_example.qmd"
 execute: 
   freeze: auto  # not necessary when there is no executable code  
+  

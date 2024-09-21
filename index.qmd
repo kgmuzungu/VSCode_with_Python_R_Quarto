@@ -50,7 +50,7 @@ You can set VSCode to autosave.
 
 Create a folder for a Python/R project with a Windows explorer and open it with File --> Open Folder. Now we create a virtual Python environment in this folder. With Ctrl + shift + p open the VSCode command palette. Type "create" and you should see `Python: Create Environment`. VSCode will find a the python interpreter that is in %PATH% or you can enter a path to a different python.exe (different version). From now onward, if you use `pip` to install a python library, it will be installed locally in the ./.venv folder of your project. You should have a .venv folder in your project folder.
 
-With Terminal --> New Terminal open a new terminal window (basically a OS command line). Lets install the python library `radian`. [radian](https://github.com/randy3k/radian). It makes the R console colorful and better readable. Open a terminal and `pip install -U radian` installs the required files. We need some more Python libraries. `pip install pandas` installs the pandas library. `pip list` lists all locally installed libraries and `pip freeze > requirements.txt` creates a list with all installed libraries plus version numbers. A great interactive python console is ipython, `pip install ipython`. Other useful packages are *plotnine*, *statsmodels*, *scipy*.
+With Terminal --> New Terminal open a new terminal window (basically a OS command line). Lets install the python library `radian`. [radian](https://github.com/randy3k/radian) makes the R console colorful and better readable. Open a terminal and `pip install -U radian` installs the required files. We need some more Python libraries. `pip install pandas` installs the pandas library. `pip list` lists all locally installed libraries and `pip freeze > requirements.txt` creates a list with all installed libraries plus version numbers. A great interactive python console is ipython, `pip install ipython`. Other useful packages are *plotnine*, *statsmodels*, *scipy*.
 
 ## Customize VSCode extensions
 
@@ -90,7 +90,7 @@ I would say if you only need Python then do not install a mixed environment. You
 :::
 
 ## Let's try it out!
-[my_R_and_python_example.qmd](https://github.com/kgmuzungu/VSCode_with_Python_R_Quarto/blob/main/my_R_and_python_example.qmd) shows how to use R and Python in the same Quarto document, how to exchange dataframes and how multi-indexing is translated. .... we could also execute and render this .qmd file with a Action workflow on GitHub ...
+[my_R_and_python_example.qmd](https://github.com/kgmuzungu/VSCode_with_Python_R_Quarto/blob/main/my_R_and_python_example.qmd) shows how to use R and Python in the same Quarto document, how to exchange dataframes and how multi-indexing is translated. .... we could also execute and render this .qmd file with a Action workflow on GitHub ... [like here](my_R_and_python_example.html)
 
 ## Resources
 
