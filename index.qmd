@@ -1,5 +1,5 @@
 ---
-title: "Setting up VSCode for Python and R with Quarto"
+title: "Setting up VSCode for Python, R and Quarto"
 format: 
     html:
         toc: true
@@ -11,9 +11,9 @@ date: today
 from: markdown+emoji
 ---
 
-## Downloads
+This article guides you through installing Python, R, and Quarto in VSCode on a Windows machine.
 
-This blog guides you through installing Python, R, and Quarto in VSCode on a Windows machine.
+## Downloads
 
 Download the installers for:
 
@@ -90,7 +90,7 @@ I would say if you only need Python then do not install a mixed environment. You
 :::
 
 ## Let's try it out!
-[my_R_and_python_example.qmd](https://github.com/kgmuzungu/VSCode_with_Python_R_Quarto/blob/main/my_R_and_python_example.qmd) shows how to use R and Python in the same Quarto document, how to exchange dataframes and how multi-indexing is translated. .... we could also execute and render this .qmd file with a workflow on GitHub ...
+[my_R_and_python_example.qmd](https://github.com/kgmuzungu/VSCode_with_Python_R_Quarto/blob/main/my_R_and_python_example.qmd) shows how to use R and Python in the same Quarto document, how to exchange dataframes and how multi-indexing is translated. .... we could also execute and render this .qmd file with a Action workflow on GitHub ...
 
 ## Resources
 
@@ -120,9 +120,12 @@ Git in VSCode [https://www.youtube.com/watch?v=i_23KUAEtUM](https://www.youtube.
 ## How this page was published on GitHub Pages?
 
 In .github\workflows\publish.yml a GitHub Actions workflow was defined. A how-to can be found [here](https://quarto.org/docs/publishing/github-pages.html#publish-action). If you use Actions then you dont need to render to a ./doc directory. In the GitHub Pages settings you do NOT set pages from Actions but keep from gh-pages branch. Also there is a misleading mistake in the how-to:
+
 > Before configuring the publishing action, it’s important that you run quarto publish gh-pages locally, once. This will create the _publish.yml configuration required by the subsequent invocations of the GitHub Action. To do this, run the following from within your project: 
-No `_publish.yml` will ever be created.
-And have a look at the [source files](https://github.com/kgmuzungu/VSCode_with_Python_R_Quarto)!
+
+... No `_publish.yml` will ever be created.
+
+And have a look at the [source files](https://github.com/kgmuzungu/VSCode_with_Python_R_Quarto) for this page!
 
 ---
 
@@ -133,6 +136,7 @@ This is still a work in progress! Any feedback highly welcome!
 ::: {.callout-caution}
 You can also contribute on Github directly! Become a contributor, make changes and create a pull request.
 :::
+
 
 ---
 
