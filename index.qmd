@@ -124,6 +124,8 @@ In .github\workflows\publish.yml a GitHub Actions workflow was defined. A how-to
 No `_publish.yml` will ever be created.
 And have a look at the [source files](https://github.com/kgmuzungu/VSCode_with_Python_R_Quarto)!
 
+---
+
 ::: {.callout-note}
 This is still a work in progress! Any feedback highly welcome! 
 :::
@@ -131,6 +133,8 @@ This is still a work in progress! Any feedback highly welcome!
 ::: {.callout-caution}
 You can also contribute on Github directly! Become a contributor, make changes and create a pull request.
 :::
+
+---
 
 *The panda eats, shoots and leaves.*
 
