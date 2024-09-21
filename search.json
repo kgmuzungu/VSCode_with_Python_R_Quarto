@@ -95,7 +95,7 @@
     "href": "index.html#lets-try-it-out",
     "title": "Setting up VSCode for Python, R and Quarto",
     "section": "Let’s try it out!",
-    "text": "Let’s try it out!\nmy_R_and_python_example.qmd shows how to use R and Python in the same Quarto document, how to exchange dataframes and how multi-indexing is translated. Try it with your VSCode setup. You have to uncomment the use_virtualenv() at the beginning … or we execute and render this .qmd file also with a a GitHub Action workflow … the result is like here"
+    "text": "Let’s try it out!\nmy_R_and_python_example.qmd shows how to use R and Python in the same Quarto document, how to exchange dataframes and how multi-indexing is translated. Try it with your VSCode setup. You have to uncomment the use_virtualenv() at the beginning … or we execute and render this .qmd file also with a a GitHub Action workflow … here the result"
   },
   {
     "objectID": "index.html#resources",
