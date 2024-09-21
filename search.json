@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Setting up VSCode for Python and R with Quarto",
+    "section": "",
+    "text": "This blog guides you through installing Python, R, and Quarto in VSCode on a Windows machine.\nDownload the installers for:\n\nPython download https://www.python.org/downloads/\nR download https://cran.r-project.org/bin/windows/base/\nVSCode download https://code.visualstudio.com/download\nQuarto download https://quarto.org/docs/download/\nGit download https://git-scm.com/download/win\n\nFirst we install Python. You can have multiple Python versions installed in parallel. On Windows machines Python can be installed in different locations, depending if it was installed via the app store or as an installable. Open e cmd.exe or powershell.exe and type python --version. You will get the Python interpreter version of the python.exe that is in the %PATH% variable. It can be handy to have the folders with python.exe in the PATH variable. Normally pip is installed with Python. pip is the python package installer. You can type pip --version on the command line. If you dont get a response than you might have to install pip separately.\nAlso install R, Quarto, Git and VSCode. The order does not matter\nThe paths of the executables of all should be in the PATH environment variable of Windows. echo %PATH% on cmd.exe. Or/and you should know the respective paths so we can add them to the VSCode extenstions manually."
+  },
+  {
+    "objectID": "index.html#downloads",
+    "href": "index.html#downloads",
+    "title": "Setting up VSCode for Python and R with Quarto",
+    "section": "",
+    "text": "This blog guides you through installing Python, R, and Quarto in VSCode on a Windows machine.\nDownload the installers for:\n\nPython download https://www.python.org/downloads/\nR download https://cran.r-project.org/bin/windows/base/\nVSCode download https://code.visualstudio.com/download\nQuarto download https://quarto.org/docs/download/\nGit download https://git-scm.com/download/win\n\nFirst we install Python. You can have multiple Python versions installed in parallel. On Windows machines Python can be installed in different locations, depending if it was installed via the app store or as an installable. Open e cmd.exe or powershell.exe and type python --version. You will get the Python interpreter version of the python.exe that is in the %PATH% variable. It can be handy to have the folders with python.exe in the PATH variable. Normally pip is installed with Python. pip is the python package installer. You can type pip --version on the command line. If you dont get a response than you might have to install pip separately.\nAlso install R, Quarto, Git and VSCode. The order does not matter\nThe paths of the executables of all should be in the PATH environment variable of Windows. echo %PATH% on cmd.exe. Or/and you should know the respective paths so we can add them to the VSCode extenstions manually."
+  },
+  {
+    "objectID": "index.html#vscode-extensions",
+    "href": "index.html#vscode-extensions",
+    "title": "Setting up VSCode for Python and R with Quarto",
+    "section": "VSCode extensions",
+    "text": "VSCode extensions\nIn VSCode we need some extensions to interact properly with the above installed. The extensions names are listed below.\n\nFor Python:\n\nPython\nPython debugger\nPylance\n\nFor R:\n\nR\nR debugger\n\nQuarto"
+  },
+  {
+    "objectID": "index.html#python-virtual-environment",
+    "href": "index.html#python-virtual-environment",
+    "title": "Setting up VSCode for Python and R with Quarto",
+    "section": "Python virtual environment",
+    "text": "Python virtual environment\nCreate a folder for a Python/R project with a Windows explorer and open it with File –&gt; Open Folder. Now we create a virtual Python environment in this folder. With Ctrl + shift + p open the VSCode command palette. Type “create” and you should see Python: Create Environment. VSCode will find a the python interpreter that is in %PATH% or you can enter a path to a different python.exe (different version). From now onward, if you use pip to install a python library, it will be installed locally in the ./.venv folder of your project. You should have a .venv folder in your project folder.\nWith Terminal –&gt; New Terminal open a new terminal window (basically a OS command line). Lets install the python library radian. radian. It makes the R console colorful and better readable. Open a terminal and pip install -U radian installs the required files. We need some more Python libraries. pip install pandas installs the pandas library. pip list lists all locally installed libraries and pip freeze &gt; requirements.txt creates a list with all installed libraries plus version numbers. A great interactive python console is ipython, pip install ipython. Other useful packages are plotnine, statsmodels, scipy."
+  },
+  {
+    "objectID": "index.html#customize-vscode-extensions",
+    "href": "index.html#customize-vscode-extensions",
+    "title": "Setting up VSCode for Python and R with Quarto",
+    "section": "Customize VSCode extensions",
+    "text": "Customize VSCode extensions\nWe still have to adapt a few settings in the VSCode extensions. Click on the Extensions symbol on the very left side, then on the sproket, select Extension settings. Look for R &gt; Rterm: Windows and enter the path for radian ({workspaceFolder}\\.venv\\Scripts\\radian.exe … copy this path as it is. You dont have to replace {workspaceFolder} with an explicit path). Set R: Bracketed Paste. And in the R debugger extension we need to set the the R interpreter path, R &gt; Rpath Windows to, e.g. C:\\Program Files\\R\\R-4.4.1\\bin\\x64\\R.exe. Note that the extension settings are global to all VSCode projects."
+  },
+  {
+    "objectID": "index.html#getting-r-ready",
+    "href": "index.html#getting-r-ready",
+    "title": "Setting up VSCode for Python and R with Quarto",
+    "section": "Getting R ready",
+    "text": "Getting R ready\nFor R to work properly we need first three R packages: languageserver and httpg. Simplest way is to click on the R symbol on the very left of VSCode (somewhere below the extensions symbol). Under ‘help pages’ click on ‘Install CRAN Package’ or on the plus sign next to it and install * httpg and * languageserver * renv\nAt this point we have a working quarto setup with a virtual Python environment and globally installed R packages. We can also setup a virtual R environment, (renv)[https://rstudio.github.io/renv/articles/renv.html], to keep R packages local in the project folder. Virtual environments allow different projects using different interpreters and package versions."
+  },
+  {
+    "objectID": "index.html#using-renv",
+    "href": "index.html#using-renv",
+    "title": "Setting up VSCode for Python and R with Quarto",
+    "section": "Using renv",
+    "text": "Using renv\nInstalling renv: More information can be found here renv. With renv::init() on the R console we create a R environment in the current project folder. To open the R console just type radian on a VSCode terminal command line (Terminal -&gt; New Terminal). You can also type R.exe for a plain R console. After restarting the R session (exit the console with q() )we should also install the following packages from the R console.\n\ninstall.packages(\"languageserver\")\ninstall.packages(\"httpgd\")\ninstall.packages(\"reticulate\")\ninstall.packages(\"tidyverse\")\ninstall.packages(\"ggplot2\")\n\nHint: renv.lock only reflects packages used in the project, see. To be sure that renv.lock is up to date, type renv::snapshot() after writing some R code."
+  },
+  {
+    "objectID": "index.html#quarto",
+    "href": "index.html#quarto",
+    "title": "Setting up VSCode for Python and R with Quarto",
+    "section": "Quarto",
+    "text": "Quarto\nQuarto commands are available from the terminal command line. To render a .qmd you would type quarto render myScrip.qmd for example. Tip: quarto install tinytex from the terminal command line, installs a library that allows .pdf rendering from quarto.\n\n\n\n\n\n\nTip\n\n\n\nYou can set VSCode to autosave.\n\n\n\n\n\n\n\n\nImportant\n\n\n\nBoth Python and R? I would say if you only need Python then do not install a mixed environment. You only need the Python part. Same for R only."
+  },
+  {
+    "objectID": "index.html#lets-try-it-out",
+    "href": "index.html#lets-try-it-out",
+    "title": "Setting up VSCode for Python and R with Quarto",
+    "section": "Let’s try it out!",
+    "text": "Let’s try it out!"
+  },
+  {
+    "objectID": "index.html#resources",
+    "href": "index.html#resources",
+    "title": "Setting up VSCode for Python and R with Quarto",
+    "section": "Resources",
+    "text": "Resources\nPython download https://www.python.org/downloads/\nVSCode download https://code.visualstudio.com/download\nQuarto download https://quarto.org/docs/download/\nGit download https://git-scm.com/download/win\nQuarto HTML basics https://quarto.org/docs/output-formats/html-basics.html\nQuarto Markdown basics https://quarto.org/docs/authoring/markdown-basics.html\nQuarto GitHub Pages https://quarto.org/docs/publishing/github-pages.html\nrenv https://rstudio.github.io/renv/articles/renv.html\nsome tweak for renv"
+  },
+  {
+    "objectID": "index.html#helpful-videos",
+    "href": "index.html#helpful-videos",
+    "title": "Setting up VSCode for Python and R with Quarto",
+    "section": "Helpful videos",
+    "text": "Helpful videos\nGit in VSCode https://www.youtube.com/watch?v=i_23KUAEtUM"
+  },
+  {
+    "objectID": "index.html#how-this-page-was-published-on-github-pages",
+    "href": "index.html#how-this-page-was-published-on-github-pages",
+    "title": "Setting up VSCode for Python and R with Quarto",
+    "section": "How this page was published on GitHub Pages?",
+    "text": "How this page was published on GitHub Pages?\nIn .github.yml a GitHub Actions workflow was defined. A how-to can be found here. If you use Actions then you dont need to render to a ./doc directory. In the GitHub Pages settings you do NOT set pages from Actions but keep from gh-pages branch. Also there is a misleading mistake in the how-to: &gt; Before configuring the publishing action, it’s important that you run quarto publish gh-pages locally, once. This will create the _publish.yml configuration required by the subsequent invocations of the GitHub Action. To do this, run the following from within your project: No _publish.yml will ever be created. And have a look at the source files!\n\n\n\n\n\n\nNote\n\n\n\nThis is still a work in progress! Any feedback highly welcome!\n\n\n\n\n\n\n\n\nCaution\n\n\n\nYou can also contribute on Github directly! Become a contributor, make changes and create a pull request.\n\n\nThe panda eats, shoots and leaves.\nThe panda eats shoots and leaves."
+  }
+]
