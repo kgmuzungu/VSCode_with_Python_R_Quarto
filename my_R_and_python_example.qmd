@@ -91,3 +91,6 @@ print("---------")
 head(reticulate::py$df_mpg_grouped_reset_index, 5)  # collapsed multi-index
 #reticulate::py_last_error()
 ```
+
+## Back to tutorial
+[Back to the tutorial](index.html)
