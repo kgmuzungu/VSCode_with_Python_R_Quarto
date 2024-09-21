@@ -1,6 +1,6 @@
 project:
   type: website
   render: 
-    - "website/index.qmd"
+    - "index.qmd"
 execute: 
   freeze: auto
