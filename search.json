@@ -18,7 +18,7 @@
     "href": "index.html#vscode-extensions",
     "title": "Setting up VSCode for Python and R with Quarto",
     "section": "VSCode extensions",
-    "text": "VSCode extensions\nIn VSCode we need some extensions to interact properly with the above installed. The extensions names are listed below.\n\nFor Python:\n\nPython\nPython debugger\nPylance\n\nFor R:\n\nR\nR debugger\n\nQuarto"
+    "text": "VSCode extensions\nIn VSCode we need some extensions to interact properly with the above installed. The extensions names are listed below.\n\nFor Python:\n\nPython\nPython debugger\nPylance\n\nFor R:\n\nR\nR debugger\n\nQuarto\n\n\n\n\n\n\n\nTip\n\n\n\nYou can set VSCode to autosave."
   },
   {
     "objectID": "index.html#python-virtual-environment",
@@ -53,7 +53,7 @@
     "href": "index.html#quarto",
     "title": "Setting up VSCode for Python and R with Quarto",
     "section": "Quarto",
-    "text": "Quarto\nQuarto commands are available from the terminal command line. To render a .qmd you would type quarto render myScrip.qmd for example. Tip: quarto install tinytex from the terminal command line, installs a library that allows .pdf rendering from quarto.\n\n\n\n\n\n\nTip\n\n\n\nYou can set VSCode to autosave.\n\n\n\n\n\n\n\n\nImportant\n\n\n\nBoth Python and R? I would say if you only need Python then do not install a mixed environment. You only need the Python part. Same for R only."
+    "text": "Quarto\nQuarto commands are available from the terminal command line. To render a .qmd you would type quarto render myScrip.qmd for example. Tip: quarto install tinytex from the terminal command line, installs a library that allows .pdf rendering from quarto.\n\n\n\n\n\n\nImportant\n\n\n\nBoth Python and R? I would say if you only need Python then do not install a mixed environment. You only need the Python part. Same for R only."
   },
   {
     "objectID": "index.html#lets-try-it-out",
