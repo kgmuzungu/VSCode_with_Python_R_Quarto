@@ -1,0 +1,133 @@
+---
+title: "Setting up VSCode for Python and R with Quarto"
+format: 
+    html:
+        toc: true
+        toc-location: right
+        code-tools: true
+        anchor-sections: true
+author: Klaus G.
+date: today
+from: markdown+emoji
+---
+
+## Downloads
+
+This blog guides you through installing Python, R, and Quarto in VSCode on a Windows machine.
+
+Download the installers for:
+
+*  Python download [https://www.python.org/downloads/](https://www.python.org/downloads/)
+*  R download [https://cran.r-project.org/bin/windows/base/](https://cran.r-project.org/bin/windows/base/)
+*  VSCode download [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
+*  Quarto download [https://quarto.org/docs/download/](https://quarto.org/docs/download/)
+*  Git download [https://git-scm.com/download/win](https://git-scm.com/download/win)
+
+First we install Python. You can have multiple Python versions installed in parallel. On Windows machines Python can be installed in different locations, depending if it was installed via the app store or as an installable. Open e cmd.exe or powershell.exe and type `python --version`. You will get the Python interpreter version of the python.exe that is in the `%PATH%` variable. It can be handy to have the folders with python.exe in the PATH variable. Normally `pip` is installed with Python. pip is the [python package installer](https://pip.pypa.io/en/stable/). You can type `pip --version` on the command line. If you dont get a response than you might have to install pip separately.  
+
+Also install R, Quarto, Git and VSCode. The order does not matter
+
+The paths of the executables of all should be in the PATH environment variable of Windows. `echo %PATH%` on cmd.exe. Or/and you should know the respective paths so we can add them to the VSCode extenstions manually.
+
+## VSCode extensions
+
+In VSCode we need some extensions to interact properly with the above installed. The extensions names are listed below.
+
+* For Python:
+    + `Python`
+    + `Python debugger`
+    + `Pylance`
+* For R:
+    + `R`
+    + `R debugger`
+* `Quarto`
+
+## Python virtual environment
+
+Create a folder for a Python/R project with a Windows explorer and open it with File --> Open Folder. Now we create a virtual Python environment in this folder. With Ctrl + shift + p open the VSCode command palette. Type "create" and you should see `Python: Create Environment`. VSCode will find a the python interpreter that is in %PATH% or you can enter a path to a different python.exe (different version). From now onward, if you use `pip` to install a python library, it will be installed locally in the ./.venv folder of your project. You should have a .venv folder in your project folder.
+
+With Terminal --> New Terminal open a new terminal window (basically a OS command line). Lets install the python library `radian`. [radian](https://github.com/randy3k/radian). It makes the R console colorful and better readable. Open a terminal and `pip install -U radian` installs the required files. We need some more Python libraries. `pip install pandas` installs the pandas library. `pip list` lists all locally installed libraries and `pip freeze > requirements.txt` creates a list with all installed libraries plus version numbers. A great interactive python console is ipython, `pip install ipython`. Other useful packages are *plotnine*, *statsmodels*, *scipy*.
+
+## Customize VSCode extensions
+
+We still have to adapt a few settings in the VSCode extensions. Click on the Extensions symbol on the very left side, then on the sproket, select *Extension settings*. Look for *R > Rterm: Windows* and enter the path for radian (`{workspaceFolder}\.venv\Scripts\radian.exe` ... copy this path as it is. You dont have to replace {workspaceFolder} with an explicit path). Set *R: Bracketed Paste*. And in the R debugger extension we need to set the the R interpreter path, *R > Rpath Windows* to, e.g. `C:\Program Files\R\R-4.4.1\bin\x64\R.exe`. Note that the extension settings are global to all VSCode projects.
+
+## Getting R ready
+
+For R to work properly we need first three R packages: languageserver and httpg. Simplest way is to click on the R symbol on the very left of VSCode (somewhere below the extensions symbol). Under 'help pages' click on 'Install CRAN Package' or on the plus sign next to it and install 
+* `httpg` and 
+* `languageserver`
+* `renv`
+
+At this point we have a working quarto setup with a virtual Python environment and globally installed R packages. We can also setup a virtual R environment, (renv)[https://rstudio.github.io/renv/articles/renv.html], to keep R packages local in the project folder. Virtual environments allow different projects using different interpreters and package versions.
+
+## Using `renv`
+
+Installing renv:
+More information can be found here [renv](https://rstudio.github.io/renv/articles/renv.html). With `renv::init()` on the R console we create a R environment in the current project folder. To open the R console just type `radian` on a VSCode terminal command line (Terminal -> New Terminal). You can also type `R.exe` for a plain R console. After restarting the R session (exit the console with `q()` )we should also install the following packages from the R console.
+
+* `install.packages("languageserver")`
+* `install.packages("httpgd")`
+* `install.packages("reticulate")`
+* `install.packages("tidyverse")`
+* `install.packages("ggplot2")`
+
+ Hint: renv.lock only reflects packages used in the project, (see)[https://rstudio.github.io/renv/articles/faq.html#why-isnt-my-package-being-snapshotted-into-the-lockfile]. To be sure that renv.lock is up to date, type `renv::snapshot()` after writing some R code.
+
+
+## Quarto
+Quarto commands are available from the terminal command line. To render a .qmd you would type `quarto render myScrip.qmd` for example.
+Tip: `quarto install tinytex` from the terminal command line, installs a library that allows .pdf rendering from quarto.
+
+::: {.callout-tip}
+You can set VSCode to autosave.
+:::
+
+::: {.callout-important}
+**Both Python and R?**
+I would say if you only need Python then do not install a mixed environment. You only need the Python part. Same for R only. 
+:::
+
+## Let's try it out!
+
+## Resources
+
+Python download [https://www.python.org/downloads/](https://www.python.org/downloads/)
+
+VSCode download [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
+
+Quarto download [https://quarto.org/docs/download/](https://quarto.org/docs/download/)
+
+Git download [https://git-scm.com/download/win](https://git-scm.com/download/win)
+
+Quarto HTML basics [https://quarto.org/docs/output-formats/html-basics.html](https://quarto.org/docs/output-formats/html-basics.html)
+
+Quarto Markdown basics [https://quarto.org/docs/authoring/markdown-basics.html](https://quarto.org/docs/authoring/markdown-basics.html)
+
+Quarto GitHub Pages [https://quarto.org/docs/publishing/github-pages.html](https://quarto.org/docs/publishing/github-pages.html)
+
+renv [https://rstudio.github.io/renv/articles/renv.html](https://rstudio.github.io/renv/articles/renv.html)
+
+
+## Helpful videos
+
+Git in VSCode [https://www.youtube.com/watch?v=i_23KUAEtUM](https://www.youtube.com/watch?v=i_23KUAEtUM)
+
+## How this page was published on GitHub Pages?
+
+In .github\workflows\publish.yml a GitHub Actions workflow was defined. A how-to can be found (here)[https://quarto.org/docs/publishing/github-pages.html#publish-action]. If you use Actions then you dont need to render to a ./doc directory. In the GitHub Pages settings you do NOT set pages from Actions but keep from gh-pages branch. Also there is a misleading mistake in the how-to:
+> Before configuring the publishing action, it’s important that you run quarto publish gh-pages locally, once. This will create the _publish.yml configuration required by the subsequent invocations of the GitHub Action. To do this, run the following from within your project: 
+No `_publish.yml` will ever be created.
+And have a look at the (source files)[https://github.com/kgmuzungu/VSCode_with_Python_R_Quarto]!
+
+::: {.callout-note}
+This is still a work in progress! Any feedback highly welcome! 
+:::
+
+::: {.callout-caution}
+You can also contribute on Github directly! Become a contributor, make changes and create a pull request.
+:::
+
+*The panda eats, shoots and leaves.*
+
+*The panda eats shoots and leaves.*
