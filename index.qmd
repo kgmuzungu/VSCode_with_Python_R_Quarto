@@ -90,7 +90,7 @@ I would say if you only need Python then do not install a mixed environment. You
 :::
 
 ## Let's try it out!
-[my_R_and_python_example.qmd](https://github.com/kgmuzungu/VSCode_with_Python_R_Quarto/blob/main/my_R_and_python_example.qmd) shows how to use R and Python in the same Quarto document, how to exchange dataframes and how multi-indexing is translated. Try it with your VSCode setup. You have to uncomment the use_virtualenv() at the beginning  ... or we execute and render this .qmd file also with a a GitHub Action workflow ... [the result is like here](my_R_and_python_example.html)
+[my_R_and_python_example.qmd](https://github.com/kgmuzungu/VSCode_with_Python_R_Quarto/blob/main/my_R_and_python_example.qmd) shows how to use R and Python in the same Quarto document, how to exchange dataframes and how multi-indexing is translated. Try it with your VSCode setup. You have to uncomment the use_virtualenv() at the beginning  ... or we execute and render this .qmd file also with a a GitHub Action workflow ... [here the result](my_R_and_python_example.html)
 
 ## Resources
 
