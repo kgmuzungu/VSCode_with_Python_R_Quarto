@@ -3,4 +3,4 @@ project:
   render: 
     - "index.qmd"
 execute: 
-  freeze: auto
+  freeze: auto  # not necessary when there is no executable code  
