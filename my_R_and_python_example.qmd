@@ -87,7 +87,6 @@ df_mpg_grouped_reset_index.head(5)
 #| label: demonstrate_multiindex_in_R
 # R code
 head(reticulate::py$df_mpg_grouped, 5)  # multi-index
-print("---------")
 head(reticulate::py$df_mpg_grouped_reset_index, 5)  # collapsed multi-index
 #reticulate::py_last_error()
 ```
