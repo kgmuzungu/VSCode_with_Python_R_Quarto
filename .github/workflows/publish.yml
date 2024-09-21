@@ -17,17 +17,25 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
+      # python installation without virtual environment; pandas is listed in requirements.txt
       - name: Install Python and Dependencies
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install -r requirements.txt
+      #- run: pip install -r requirements.txt
       
+      # create a python virtual environment      
+      - uses: syphar/restore-virtualenv@v1
+        id: cache-virtualenv
+        with:
+          requirement_files: requirements.txt  
+
       - name: Install R
         uses: r-lib/actions/setup-r@v2
         with:
           r-version: '4.4.1'
 
+      # installs all dependencies from renv.lock
       - name: Install R Dependencies
         uses: r-lib/actions/setup-renv@v2
 
